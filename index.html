@@ -1,61 +1,3 @@
-Traditionally, a meeting note includes:
-
-
-title x
-meta x
-link x
-
-main x
-header x, footer x
-nav (denotes a section meant to provide navigation links) x
-h1 x, h2 x, h3 x
-section x
-
-div, span (these elements may not be too useful without CSS / JavaScript, but are too important to leave out, so just include them somewhere in your document. It’s okay if they aren’t useful)
-hr x
-p x
-ul x
-ol x
-li x
-
-b x
-strong (know the differences between b and strong) x
-i x
-em (know the differences between i and em) x
-a x
-br x
-
-img x
-audio x
-video x
-
-details x
-summary x
-
-form
-fieldset
-input (of types checkbox, radio, text, and date)*
-textarea
-datalist
-select
-option
-button
-
-a title (e.g. "Pomodoro Timer First Brainstorm")
-subtitle for the meeting section/the topic of the meeting (e.g. "brainstorming", "check-ins", "documentation")
-subtitle for the date
-attendance list
-agenda of what the meeting will cover
-things that were unfinished business from last meeting
-things that are new business that need to be talked about
-any miscellaneous comments / questions / concerns that anyone would like to bring up
-pictures of any diagrams / architecture / things that were presented
-SWE meetings often have people diagram things on a whiteboard so we want those captured as well
-For the following two, you can simply take a 30 second pretend audio recording & video recording to use, we are just trying to get you familiar with the <audio> and <video> elements. Yes, you must have both audio and video elements, and yes, you can use the audio from the video you took for the audio element, it just has to be in a separate audio file.
-audio recording the meeting
-video recording of the meeting
-
-  
 <!DOCTYPE html>
 <html lang="en">
     <meta charset="utf-8" />
@@ -73,17 +15,17 @@ video recording of the meeting
                 <header>contents</header>
                 <ul>
                     <ol>
-                        <li><a>attendance list</a></li>
-                        <li><link>agenda</link></li>
-                        <li>comments</li>
-                        <li>media</li>
+                        <li><a href="#attendance">attendance list</a></li>
+                        <li><a href="#agenda">agenda</a></li>
+                        <li><a href="#comments">comments</a></li>
+                        <li><a href="#media">media</a></li>
                     </ol>
                 </ul>
             </nav>
         </section>
         <hr />
         <section>
-            <h2>attendenance list</h2>
+            <h2><div id = "attendance">attendance list</div></h2>
             <ul>
                 <li>Jimmy</li>
                 <li>Emma</li>
@@ -93,16 +35,16 @@ video recording of the meeting
         </section>
         <hr />
         <section>
-            <h1>agenda</h1>
-            <strong>from previous meeting</strong>
+            <h1><div id="agenda">agenda</div></h1>
+            <strong><span>from previous meeting</span></strong>
             <p>Finalize public announcement regarding embezzlement accusations. Resolve cost cutting measures. Finish planning end-of-quarter cookout.</p>
 
-            <strong>new business</strong>
+            <strong><span>new business</span></strong>
             <p>Send meeting proposal to mushroom kingdom branch. Look over new video from CEO (contents unknown). Congratulate Sartre on his newlyborn Niece!</p>
         </section>
         <hr />
         <section>
-            <header>comments</header>
+            <header><div id="comments">comments</div></header>
             <p><em>"For now it is best we not commit to any one line regarding the embezzlement. We ourselves know little." -Sartre</em></p>
             <p><em>"Maybe there'll be something in the video." -Jimmy</em></p>
             <p><em>"It's probably another of his banal end of quarter talks." -Emma</em></p>
@@ -139,20 +81,66 @@ video recording of the meeting
         </section>
         <hr />
         <section>
-            <footer>media</footer>
+            <footer><div id="media">media</div></footer>
             <img src="Trucks.png" alt="Image describing how trucks will be sold/repurposed to cut costs."/>
             <img src="Wario_Wario.jpg" alt="Its-a-image of Wario."/>
             <video controls width="250">
                 <source src="Wario_Addresses_His_Nation_Amidst_Its_Destruction.mp4" type="video/mp4" />
+                <link>
               </video>
             <audio controls src="Wario_Addresses_His_Nation_Amidst_Its_Destruction.mp3"></audio>
         </section>
-        <details>
-            <summary>MKIS. Acquired: 4/20/24. Inspector Kong. Designation: unclassified.</summary>
-            <p>Regarding prosecution of elements of Wario Banks. It seems even relatively high level management was not included in the scandal or accountable for acts in the Wario files. This... emotional testimony, recovered from a company computer is my evidence to that fact. The travel dates of these individuals combined with the meta data of this document make its deliberate fabrication unlikely.</p>
-            
-            <p>It is my recommendation based on this that Mushroom Kingdom Intelligence Services reserve suspicion to the target himself and his friend circle. The asylum claims of Wario Banks employees, managers, and affiliates should be held as valid. These individuals and their families should be afforded justice, protection, and peace of mind.</p>
-        </details>
+            <div>
+            <details>
+                <summary>MKIS. Acquired: 4/20/24. Inspector Kong. Designation: unclassified.</summary>
+                <p>Regarding prosecution of elements of Wario Banks. It seems even relatively high level management was not included in the scandal or accountable for acts in the Wario files. This... emotional testimony, recovered from a company computer is my evidence to that fact. The travel dates of these individuals combined with the meta data of this document make its deliberate fabrication unlikely.</p>
+                
+                <p>It is my recommendation based on this that Mushroom Kingdom Intelligence Services reserve suspicion to the target himself and his friend circle. The asylum claims of Wario Banks employees, managers, and affiliates should be held as valid. These individuals and their families should be afforded both justice and peace of mind.</p>
+            <link rel="favicon" href="pixil-frame-0.png" />
+            </details>
+            </div>
     </main>
   </body>
+  <form>
+    <title>Pet Selecter</title>
+    <b>select all your favorite pets.</b><br>
+    your favorite is:
+    <fieldset>Dog (not optional)</fieldset><br>
+    <select name="pets" id="pet-select">
+        <option value="">--select your other favorites--</option>
+        <option value="dog">Dog</option>
+        <option value="dog">Dog</option>
+        <option value="dog">Dog</option>
+        <option value="you fool, all the options were actually dog">Cat</option>
+        <option value="dog">Turtle</option>
+        <option value="dog">dog</option>
+    </select>
+    Type in your 3 favorite pets' names
+    <textarea rows="3" cols="10"></textarea>
+    I like (select one)
+    <input type = "checkbox", id="animals", name="animals" />
+    <label for="animals">animals</label> 
+    <input type = "checkbox", id="misery", name="misery" />
+    <label for="misery">being a worthless person</label>
+    If you selected the second, we will take your confession here:
+    <textarea rows="12" cols="24"></textarea>
+    Date your confession:
+    <input type="date" id="start" name="trip-start" value="2024-16-24" min="2024-16-24" />
+
+    Sign it:
+    <input type="text" id="name" name="name" size="40" />
+
+    <input type="radio" id="RGood" value="huey" />
+    <label for="RGood">animals are good</label>
+    What is the best?
+    <datalist id="body parts">
+        <option value="Ears">ears</option>
+        <option value="tails">tails</option>
+        <option value="nose">nose</option>
+        <option value="fur">fur</option>
+        <option value="scales">scales</option>
+        <option value="love">love</option>
+    </select>
+    <button type="button">Pets are the best</button>
+  </form>
 </html>
