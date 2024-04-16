@@ -1,0 +1,121 @@
+Traditionally, a meeting note includes:
+
+
+title x
+meta x
+link x
+
+main x
+header x, footer x
+nav (denotes a section meant to provide navigation links) x
+h1 x, h2 x, h3 x
+section x
+
+div, span (these elements may not be too useful without CSS / JavaScript, but are too important to leave out, so just include them somewhere in your document. It’s okay if they aren’t useful)
+hr x
+p
+ul x
+ol x
+li x
+
+b x
+strong (know the differences between b and strong)
+i x
+em (know the differences between i and em)
+a x
+br x
+
+img x
+audio x
+video x
+
+details
+summary
+
+form
+fieldset
+input (of types checkbox, radio, text, and date)*
+textarea
+datalist
+select
+option
+button
+
+a title (e.g. "Pomodoro Timer First Brainstorm")
+subtitle for the meeting section/the topic of the meeting (e.g. "brainstorming", "check-ins", "documentation")
+subtitle for the date
+attendance list
+agenda of what the meeting will cover
+things that were unfinished business from last meeting
+things that are new business that need to be talked about
+any miscellaneous comments / questions / concerns that anyone would like to bring up
+pictures of any diagrams / architecture / things that were presented
+SWE meetings often have people diagram things on a whiteboard so we want those captured as well
+For the following two, you can simply take a 30 second pretend audio recording & video recording to use, we are just trying to get you familiar with the <audio> and <video> elements. Yes, you must have both audio and video elements, and yes, you can use the audio from the video you took for the audio element, it just has to be in a separate audio file.
+audio recording the meeting
+video recording of the meeting
+
+  
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf-8" />
+    <title>Check In With Boss Minutes</title>
+  <head>
+    <h3>Checking In With Boss</h3>
+    <i>logistics and next steps</i><br>
+    <b>4/14/2024</b>
+  </head>
+  
+  <body>
+    <main>
+        <section>
+            <nav class="menu">
+                <header>contents</header>
+                <ul>
+                    <ol>
+                        <li><a>attendance list</a></li>
+                        <li><link>agenda</link></li>
+                        <li>comments</li>
+                        <li>media</li>
+                    </ol>
+                </ul>
+            </nav>
+        </section>
+        <hr />
+        <section>
+            <h2>attendenance list</h2>
+            <ul>
+                <li>Jimmy</li>
+                <li>Emma</li>
+                <li>Paul</li>
+                <li>Sartre</li>
+            </ul>
+        </section>
+        <hr />
+        <section>
+            <h1>agenda</h1>
+        </section>
+        <hr />
+        <section>
+            <header>comments</header>
+        </section>
+        <hr />
+        <section>
+            <footer>media</footer>
+            <img src="path/to/image.jpg" alt="describes the image being shown for screen readers, or if the image can't be displayed"/>
+            <video controls width="250">
+                <source src="/media/cc0-videos/flower.webm" type="video/webm" />
+              
+                <source src="/media/cc0-videos/flower.mp4" type="video/mp4" />
+              
+                Download the
+                <a href="/media/cc0-videos/flower.webm">WEBM</a>
+                or
+                <a href="/media/cc0-videos/flower.mp4">MP4</a>
+                video.
+              </video>
+            <audio controls src="/media/cc0-audio/t-rex-roar.mp3"></audio>
+        </section>
+    </main>
+  </body>
+</html>
