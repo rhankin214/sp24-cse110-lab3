@@ -1,8 +1,8 @@
-body {
+the-rest {
     position: static
 }
 
-h1 {
+main-header {
     position: sticky;
     top: 0px;
 }
