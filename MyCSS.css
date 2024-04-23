@@ -1,19 +1,25 @@
-/*positioning*/
-#the-rest {
-    position: static
+/*font Roboto*/
+@font-face {
+    font-family: "Roboto";
+    src: url("Roboto/Roboto-Light.ttf");
 }
 
+/*positioning*/
 #main-header {
+    font-family: "Roboto";
     position: sticky;
     background-color: #ffffff;
     border-style: solid;
     top: 0px;
     width:100%;
 }
+#the-rest {
+    position: static
+}
 
 /*boxing*/
-/*TODO: Margin, border, padding*/
 #table-of-contents {
+    font-family: "Roboto";
     margin-top: 0.1cm;
     margin: bottom 0.2cm;
     margin-left: 0.5cm;
