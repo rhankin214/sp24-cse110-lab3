@@ -5,6 +5,11 @@
     <meta charset="utf-8">
     <link rel="icon" href="pixil-frame-0.png" />
     <link rel="stylesheet" href="MyCSS.css">
+    <style>
+        body{
+            background-color:antiquewhite;
+        }
+    </style>
 </head>
   <body>
     <main>
@@ -87,16 +92,16 @@
             <section>
                 <div id="media"><footer>media</footer></div>
                 <div id="WaVideo">
-                    <video controls width="750">
+                    <video controls  style="width:4.25in">
                         <source src="Wario_Addresses_His_Nation_Amidst_Its_Destruction.mp4" type="video/mp4" />
                     </video><br>
                 </div>
                 <div id="Wario-image">
-                    <img src="Wario_Wario.png" alt="Its-a-image of Wario."/><br>
+                    <img src="Wario_Wario.png" width="400" alt="Its-a-image of Wario."/>
                 </div>
                 <audio controls src="Wario_Addresses_His_Nation_Amidst_Its_Destruction.mp3"></audio>
                 <div id="Truck-image">
-                    <img src="Trucks.png" alt="Image describing how trucks will be sold/repurposed to cut costs."/>
+                    <img src="Trucks.png" alt="Image describing how trucks will be sold/repurposed to cut costs." style="width:150mm"/>
                 </div>
             </section>
                 <div id="DK-note">
@@ -111,43 +116,44 @@
         <header>Pet Selector</header>
         <h3>Select all your favorite pets</h3>
         your favorite is:<br>
-        <fieldset>Dog (not optional)</fieldset><br>
-        <select name="pets" id="pet-select">
-            <option value="">--select your other favorites--</option>
-            <option value="dog">Dog</option>
-            <option value="dog">Dog</option>
-            <option value="dog">Dog</option>
-            <option value="you fool, all the options were actually dog">Cat</option>
-            <option value="dog">Turtle</option>
-            <option value="dog">dog</option>
-        </select><br>
-        Type in your 3 favorite pets' names<br>
-        <textarea rows="3" cols="10"></textarea><br>
-        I like (select one)<br>
-        <input type = "checkbox" id="animals" name="animals">
-        <label for="animals">animals</label><br>
-        <input type = "checkbox" id="misery" name="misery">
-        <label for="misery">being a worthless person</label><br>
-        If you selected the second, we will take your confession here:<br>
-        <textarea rows="12" cols="24"></textarea><br>
-        Date your confession:<br>
-        <input type="date" id="start" name="trip-start" value="2024-04-16" min="2024-04-16"><br>
+        <fieldset>Dog (not optional)</fieldset>
+            <div id="form-element"><select name="pets" id="pet-select">
+                <option value="">--select your other favorites--</option>
+                <option value="dog">Dog</option>
+                <option value="dog">Dog</option>
+                <option value="dog">Dog</option>
+                <option value="you fool, all the options were actually dog">Cat</option>
+                <option value="dog">Turtle</option>
+                <option value="dog">dog</option>
+            </select></div>
+            Type in your 3 favorite pets' names<br>
+            <div id="form-element"><textarea rows="3" cols="10"></textarea></div>
+            I like (select one)<br>
+            <input type = "checkbox" id="animals" name="animals">
+            <label for="animals">animals</label><br>
+            <input type = "checkbox" id="misery" name="misery">
+            <label for="misery">being a worthless person</label><br>
+            If you selected the second, we will take your confession here:<br>
+            <textarea rows="12" cols="24"></textarea><br>
+            Date your confession:<br>
+            <input type="date" id="start" name="trip-start" value="2024-04-16" min="2024-04-16"><br>
 
-        Sign it:<br>
-        <input type="text" id="name" name="name" size="40"><br>
+            Sign it:<br>
+            <input type="text" id="name" name="name" size="40"><br>
 
-        <input type="radio" id="RGood" value="huey"><br>
-        <label for="RGood">animals are good</label><br>
-        What is the best?<br>
-        <datalist id="bodyparts">
-            <option value="Ears">ears</option>
-            <option value="tails">tails</option>
-            <option value="nose">nose</option>
-            <option value="fur">fur</option>
-            <option value="scales">scales</option>
-            <option value="love">love</option>
-        </datalist><br>
-        <button type="button">Pets are the best</button>
+            <input type="radio" id="RGood" value="huey"><br>
+            <label for="RGood">animals are good</label><br>
+            What is the best?
+            <datalist id="bodyparts">
+                <option value="Ears">ears</option>
+                <option value="tails">tails</option>
+                <option value="nose">nose</option>
+                <option value="fur">fur</option>
+                <option value="scales">scales</option>
+                <option value="love">love</option>
+            </datalist><br>
+            <button type="button">Pets are the best</button>
+        </div>
     </form>
         </main>
     </div>
