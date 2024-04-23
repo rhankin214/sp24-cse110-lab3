@@ -1,22 +1,24 @@
 /*positioning*/
-the-rest {
+#the-rest {
     position: static
 }
 
-main-header {
+#main-header {
     position: sticky;
+    background-color: #ffffff;
+    border-style: solid;
     top: 0px;
 }
 
 /*boxing*/
 /*TODO: Margin, border, padding*/
-table-of-contents {
-    margin-top: 0.2cm;
+#table-of-contents {
+    margin-top: 0.1cm;
     margin: bottom 0.2cm;
     margin-left: 0.5cm;
     margin-right: 0cm;
 
-    padding-top: 1cm;
+    padding-top: 0.1cm;
     padding: left 0.8cm;
     padding-right: 0cm;
     padding: bottom 0.8cm;
@@ -27,4 +29,9 @@ table-of-contents {
     border-color:darkblue;
     border-width: 4px;
     border-radius: 1px;
+}
+#DK-note {
+    border-style:solid;
+    margin: 0.2cm;
+    padding: 0.1cm;
 }
