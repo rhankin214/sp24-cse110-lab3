@@ -35,3 +35,17 @@
     margin: 0.2cm;
     padding: 0.1cm;
 }
+
+#Truck-image {
+    display: block;
+    width: 750px;
+}
+#WaVideo {
+    display: block;
+    width: 750px;
+}
+#Wario-image{
+    display: block;
+    width: 300px;
+    min-width: 10cqh;
+}
