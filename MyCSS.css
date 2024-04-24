@@ -7,7 +7,6 @@
     font-family: "Roboto";
     src: url("Roboto/Roboto-Light.ttf");
 }
-
 /*Christmas 'pets are the best' button*/
 button:hover{
     color: red;
@@ -20,6 +19,17 @@ button:active{
     syntax: "<color>";
     inherits: false;
     initial-value: darkblue;
+}
+
+/*grid layout for big dramatic text thing*/
+/*TODO: 3 attributes used*/
+form{
+    display: inline-grid;
+    grid-template-columns: [bad] 0.1vw [body] 0.8vw [end] 0.1vw;
+}
+form > p {
+    grid-column-start: body;
+    grid-column-end: end;
 }
 
 /*positioning*/
