@@ -15,8 +15,6 @@ button:active{
 }
 
 :root {
-    syntax: "<color>";
-    inherits: false;
     --text-color: darkblue;
 }
 
