@@ -14,10 +14,10 @@ button:active{
     color: green;
 }
 
-@property --text-color {
+:root {
     syntax: "<color>";
     inherits: false;
-    initial-value: darkblue;
+    --text-color: darkblue;
 }
 
 /*positioning*/
@@ -61,14 +61,14 @@ button:active{
 #table-of-contents {
     font-family: "Roboto";
     margin-top: 0.1cm;
-    margin: bottom 0.2cm;
+    margin: 0.1cm 0cm 0cm 0.2cm;
     margin-left: 0.5cm;
     margin-right: 0cm;
 
     padding-top: 0.1cm;
-    padding: left 0.8cm;
+    padding: 0.1cm 0cm 0cm 0.8cm;
     padding-right: 0cm;
-    padding: bottom 0.8cm;
+    padding:  0.8cm;
 
     border-style: solid double solid double;
     border-bottom: 10px solid darkgreen;
@@ -92,16 +92,10 @@ button:active{
 #Truck-image {
     display: block;
     max-width: 400px;
-    min-width: none;
 }
 #WaVideo {
     display: block;
     width: 8px;
-}
-#Wario-image{
-    display: inline;
-    max-width: 80px;
-    min-width: 10cqh;
 }
 
 #da-media{
