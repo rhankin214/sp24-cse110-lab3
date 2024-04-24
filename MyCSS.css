@@ -1,6 +1,4 @@
-/*Phone resolution: 414×896 pixels to 375×812*/
-/*Tablet resolution: 768×1024*/
-/*Desktop resolution: 1920x1080*/
+
 
 /*font Roboto*/
 @font-face {
@@ -28,11 +26,27 @@ button:active{
     position: sticky;
     background-color: #ffffff;
     border-style: solid;
-    top: 0px;
-    width:100%;
+    top: 10px;
+    width: 100%;
 }
+/*Phone resolution: 414×896 pixels to 375×812*/
+/*Tablet resolution: 768×1024*/
+/*Desktop resolution: 1920x1080*/
+@media(width < 896px)
+{
+    #main-header {
+        top: 0px;
+        font-size:x-small;
+        padding-bottom: 0vh;
+        margin-bottom: 0vh;
+    }
+}
+
+
+
 #the-rest {
     position: static;
+    
 }
 #drama {
     display:grid;
@@ -90,7 +104,14 @@ button:active{
     min-width: 10cqh;
 }
 
-#form-element{
+#da-media{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex-shrink: 4;
+}
+#da-media > audio {
+    order: 10;
+}
+#da-media > image{
+    order: 5;
 }
