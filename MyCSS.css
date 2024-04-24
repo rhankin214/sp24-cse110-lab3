@@ -7,6 +7,7 @@
     font-family: "Roboto";
     src: url("Roboto/Roboto-Light.ttf");
 }
+
 /*Christmas 'pets are the best' button*/
 button:hover{
     color: red;
@@ -21,17 +22,6 @@ button:active{
     initial-value: darkblue;
 }
 
-/*grid layout for big dramatic text thing*/
-/*TODO: 3 attributes used*/
-form{
-    display: inline-grid;
-    grid-template-columns: [bad] 0.1vw [body] 0.8vw [end] 0.1vw;
-}
-form > p {
-    grid-column-start: body;
-    grid-column-end: end;
-}
-
 /*positioning*/
 #main-header {
     font-family: "Roboto";
@@ -42,9 +32,17 @@ form > p {
     width:100%;
 }
 #the-rest {
-    position: static
+    position: static;
 }
-
+#drama {
+    display:grid;
+    grid-template-columns: [first] 10vw [body] 80vw[endbody] 0.1vw [end];
+    grid-template-rows: auto;
+}
+#drama > p {
+    grid-column-start: body;
+    grid-column-end: endbody;
+}
 /*boxing*/
 #table-of-contents {
     font-family: "Roboto";
@@ -93,5 +91,6 @@ form > p {
 }
 
 #form-element{
-    display: block;
+    display: flex;
+    flex-direction: row;
 }
