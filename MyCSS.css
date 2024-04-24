@@ -1,7 +1,19 @@
+/*Phone resolution: 414×896 pixels to 375×812*/
+/*Tablet resolution: 768×1024*/
+/*Desktop resolution: 1920x1080*/
+
 /*font Roboto*/
 @font-face {
     font-family: "Roboto";
     src: url("Roboto/Roboto-Light.ttf");
+}
+
+/*Christmas 'pets are the best' button*/
+button:hover{
+    color: red;
+}
+button:active{
+    color: green;
 }
 
 @property --text-color {
